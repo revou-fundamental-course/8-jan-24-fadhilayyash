@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body{
+    display: grid;
+    background: #F6B17A;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    background: #2D3250;
+    height: 100px;
+    padding: 10px;
+    gap: 10px;
+    box-shadow: 0px 2px 18px 11px rgba(0,0,0,0.75);
+}
+
+header p{
+    font-size: 50px;
+    color: #F6B17A;
+    font-family: 'Monoton', sans-serif;
+    cursor: pointer;
+    
+}
+
+header .small{
+    color: #bdbdbd;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.container section {
+    display: flex;
+    min-width: 600px;
+    flex-direction: column;
+    background-color: #efefef;
+}
+
+.container .info{
+    display: flex;
+    margin: 20px 300px;
+    background: none;
+    border: none;
+    text-align: center;
+}
+
+.container .info .greetings h2{
+    margin-top: 30px;
+    color: #2D3250;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.container .info .greetings p{
+    color: #2D3250;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.container .info .greetings h5{
+    color: #F6B17A;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 30px;
+    background: #424769;
+    border-radius: 16px;
+    box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.container .content {
+    display: flex;
+    margin: 20px 300px;
+    padding: 20px;
+    /* border: 5px solid #2D3250; */
+    border-radius: 24px;
+    position: inherit;
+    box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.15);
+}
+
+.container .content .title{
+    color: #F6B17A;
+    background: #424769;
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    font-size: 20px;
+    text-align: center;
+    align-self: center;
+
+}
+
+.container .content img{
+    margin: 20px;
+    width: 220px;
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.15);
+}
+
+.container .content .formula-info{
+    color: #2D3250;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.container .content .formula-info .formula{
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 21px;
+    font-weight: bolder;
+    text-align: center;
+    color: #F6B17A;
+    background-color: #424769;
+    border-radius: 12px;
+}
+
+.container .content .calc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 50px;
+    background: #424769;
+    border-radius: 16px;
+}
+
+.container .content .calc h2{
+    color: #F6B17A;
+    padding: 20px;
+}
+
+.container .content .calc input{
+    display: flex;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #F6B17A;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0; 
+}
+
+.container .content .calc input::placeholder{
+    text-align: center;
+    color: #2D3250;
+}
+
+.container .content .calc input:focus{
+    outline: none;
+    background-color: #7077A1;
+    transition: .2s ease-in-out;
+    transition-delay: .25;
+}
+
+.container .content .calc input:focus::placeholder{
+    color: transparent;
+}
+
+.container .content .calc button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding: 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 16px;
+    color: #F6B17A;
+    background: #2D3250;
+    font-size: medium;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
+}
+
+.container .content .calc button:hover{
+    background-color: #F6B17A;
+    color: #2D3250;
+    transition: .2s ease-in-out;
+    transition-delay: .25;
+}
+
+.container .content .calc button:active{
+    background: #2D3250; 
+    color: #F6B17A;
+}
