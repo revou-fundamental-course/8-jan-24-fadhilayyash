@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Comfortaa', sans-serif;
+    cursor: default;
 }
 
 body{
@@ -44,7 +45,7 @@ header .small{
     display: flex;
     min-width: 600px;
     flex-direction: column;
-    background-color: #efefef;
+    background-color: #2D3250;
 }
 
 .container .info{
@@ -53,6 +54,7 @@ header .small{
     background: none;
     border: none;
     text-align: center;
+    transition: all .2s ease;
 }
 
 .container .info .greetings h2{
@@ -75,28 +77,42 @@ header .small{
     margin-top: 15px;
     padding: 12px;
     font-size: 30px;
-    background: #424769;
+    background: #2D3250;
     border-radius: 16px;
     box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.15);
+    transition: all .2s ease;
     cursor: pointer;
+}
+
+.container .info .greetings #spec{
+    color: #2D3250;
+    background: none;
+    box-shadow: none;
+    transition: all .2s ease;
+}
+
+.container .info .greetings #spec:hover{
+    color: #F6B17A;
+    background: #2D3250;
+    box-shadow: inherit;
 }
 
 .container .content {
     display: flex;
     margin: 20px 300px;
     padding: 20px;
-    /* border: 5px solid #2D3250; */
     border-radius: 24px;
-    position: inherit;
     box-shadow: 0px 0px 40px 14px rgba(0,0,0,0.15);
+    transition: all .2s ease;
 }
 
 .container .content .title{
     color: #F6B17A;
     background: #424769;
     width: 100%;
-    padding: 12px;
-    border-radius: 16px;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 20px;
     font-size: 20px;
     text-align: center;
     align-self: center;
@@ -112,9 +128,11 @@ header .small{
 }
 
 .container .content .formula-info{
-    color: #2D3250;
+    color: #F6B17A;
     font-weight: 500;
     font-size: 18px;
+    line-height: 30px;
+    padding: 13px 30px;
 }
 
 .container .content .formula-info .formula{
@@ -124,7 +142,6 @@ header .small{
     font-weight: bolder;
     text-align: center;
     color: #F6B17A;
-    background-color: #424769;
     border-radius: 12px;
 }
 
@@ -141,18 +158,32 @@ header .small{
 .container .content .calc h2{
     color: #F6B17A;
     padding: 20px;
+    margin-bottom: 10px;
+}
+
+.container .content .screen{
+    margin: 0 20px 20px;
+    padding: 15px 100px;
+    width: 100%;
+    height: 100%;
+    background: #2D3250;
+    border-radius: 20px;
+    line-height: 40px;
+    color: #F6B17A;
+    text-align: center;
 }
 
 .container .content .calc input{
-    display: flex;
     border: none;
-    border-radius: 12px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #F6B17A;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    margin-bottom:  30px;
+    background-color: #2D3250;
     cursor: pointer;
     text-align: center;
     font-size: 16px;
+    color: #F6B17A;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -169,14 +200,13 @@ input[type=number] {
 
 .container .content .calc input::placeholder{
     text-align: center;
-    color: #2D3250;
+    color: #bdbdbd;
+    opacity: 50%;
 }
 
 .container .content .calc input:focus{
     outline: none;
-    background-color: #7077A1;
-    transition: .2s ease-in-out;
-    transition-delay: .25;
+    background-color: #2D3250;
 }
 
 .container .content .calc input:focus::placeholder{
@@ -184,30 +214,81 @@ input[type=number] {
 }
 
 .container .content .calc button{
-    display: flex;
+    display: block;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100px;
     padding: 15px;
-    margin: 5px;
+    margin: 10px;
     border: none;
     border-radius: 16px;
-    color: #F6B17A;
-    background: #2D3250;
-    font-size: medium;
+    color: #2D3250;
+    background:#F6B17A;
+    font-size: larger;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.15);
+    transition: all .2s ease;
 }
 
-.container .content .calc button:hover{
-    background-color: #F6B17A;
-    color: #2D3250;
-    transition: .2s ease-in-out;
-    transition-delay: .25;
+.container .content .calc .submit:hover{
+    color:  #F6B17A ;
+   background-color: #2D3250;
 }
 
-.container .content .calc button:active{
-    background: #2D3250; 
+.container .content .calc .reset:hover{
+    background-color: #be4141;
     color: #F6B17A;
+}
+
+
+.container .content .calc .reset:active {
+    background:  #F6B17A; 
+    color: #2D3250;
+}
+
+.container .content .calc .submit:active {
+    background:  #F6B17A; 
+    color: #2D3250;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background: #2D3250;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 100px 0 0;
+    position: absolute;
+}
+
+footer p{
+    font-size: 40px;
+    color: #F6B17A;
+    font-family: 'Monoton', sans-serif;
+}
+
+footer h3{
+    font-size: smaller;
+    color: #bdbdbd;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        width: fit-content;
+    }
+
+    .container .content {
+        margin: 30px 100px;
+    }
 }

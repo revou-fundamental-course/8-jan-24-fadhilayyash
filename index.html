@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katik | Ayyash</title>
+    <title>Katik | RevoU</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,6 +19,7 @@
                 <h2>Welcome to Katik!</h2>
                 <p>Hai sobat, Selamat Datang di Katik!<br>Sebuah web apps sederhana yang akan membantumu menghitung luas dan keliling sebuah bangun datar</p>
                 <h5>Persegi</h5>
+                <h5 id="spec">Persegi Panjang</h5>
             </div>
 
         </section>
@@ -40,11 +41,17 @@
             <div class="calc">
                  <h2>Hitung Luas Persegi</h2>
                  <div class="screen">
-                        
+                    <p id="upperL" style="color: #bdbdbd; opacity: 25%; cursor: default;">hasil akan terlihat di sini...</p>
+                    <p id="display"></p>
+                    <p id="display1"></p>
+                    <p id="display2"></p>
+                    <p id="display3"></p>
                  </div>
-                <input type="number" placeholder="masukkan nilai sisi">
-                <button class="submit">Hitung</button>
-                <button class="reset" id="reset">Reset</button>
+                 <label for="input-luas"></label>
+                 <input type="number" placeholder="masukkan nilai sisi" class="input" id="input-luas">
+
+                <button class="submit" onclick="hitungLuas()">Hitung</button>
+                <button class="reset" id="reset" onclick="resetL()">Reset</button>
             </div>
             
         </section>
@@ -66,16 +73,27 @@
                 <div class="calc">
                     <h2>Hitung Keliling Persegi</h2>
                     <div class="screen">
-
+                        <p id="upperK" style="color: #bdbdbd; opacity: 25%; cursor: default;">hasil akan terlihat di sini...</p>
+                        <p id="display4"></p>
+                        <p id="display5"></p>
+                        <p id="display6"></p>
+                        <p id="display7"></p>
                     </div>
-                    <input type="number" placeholder="masukkan nilai sisi">
-                    <button class="submit">Hitung</button>
-                    <button class="reset">Reset</button>
+                    <label for="input-keliling"></label>
+                    <input type="number" placeholder="masukkan nilai sisi" class="input" id="input-keliling">
+
+                    <button class="submit" onclick="hitungKeliling()">Hitung</button>
+                    <button class="reset" onclick="resetK()">Reset</button>
                 </div>
 
         </section>
+        <footer>
+            <p>Katik</p>
+            <h3>&copyfadhilayyash04@gmail.com</h3>
+        </footer>
 
     </div>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
