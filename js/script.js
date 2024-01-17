@@ -42,9 +42,9 @@ function hitungKeliling()  {
         display7.innerText = "";
     } else {
         upperK.innerHTML = "";    
-        display4.innerHTML = "L = 4 × S"
-        display5.innerHTML = "L = " + 4 + " × " + angka;
-        display6.innerHTML = "L = " + keliling;
+        display4.innerHTML = "K = 4 × S"
+        display5.innerHTML = "K = " + 4 + " × " + angka;
+        display6.innerHTML = "K = " + keliling;
         display7.innerHTML = "Jadi, jika nilai pada sisi persegi adalah " + angka + " cm, maka keliling persegi adalah " + keliling + " cm" + supscript;
     }
 }
