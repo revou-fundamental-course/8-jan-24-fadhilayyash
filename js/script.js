@@ -27,7 +27,7 @@ function hitungLuas()  {
         display.innerHTML = "L = S × S"
         display1.innerHTML = "L = " + angka + " × " + angka;
         display2.innerHTML = "L = " + luas;
-        display3.innerHTML = "Jadi, jika nilai sisi pada persegi adalah " + angka + " cm, maka keliling persegi adalah " + luas + " cm" + supscript;
+        display3.innerHTML = "Jadi, jika nilai sisi pada persegi adalah " + angka + " cm, maka luas persegi adalah " + luas + " cm" + supscript;
     }
 }
 
@@ -45,7 +45,7 @@ function hitungKeliling()  {
         display4.innerHTML = "L = 4 × S"
         display5.innerHTML = "L = " + 4 + " × " + angka;
         display6.innerHTML = "L = " + keliling;
-        display7.innerHTML = "Jadi, jika nilai pada sisi persegi adalah " + angka + " cm, maka luas persegi adalah " + keliling + " cm" + supscript;
+        display7.innerHTML = "Jadi, jika nilai pada sisi persegi adalah " + angka + " cm, maka keliling persegi adalah " + keliling + " cm" + supscript;
     }
 }
 
